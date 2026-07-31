@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Girlfriends Day ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- Splash Screen -->
+<section id="splash" class="page active">
+    <div class="card">
+        <h1>❤️</h1>
+        <h2>Made With Love</h2>
+        <p>For Someone Truly Special</p>
+        <h3>Brandon ❤️ Fiona</h3>
+
+        <button onclick="showPage('verify')">
+            Begin Surprise
+        </button>
+    </div>
+</section>
+
+<!-- Verification -->
+<section id="verify" class="page">
+
+<div class="card">
+
+<h2>A Special Surprise Awaits...</h2>
+
+<p>
+Only one person should continue.
+</p>
+
+<h3>Is your name Fiona?</h3>
+
+<button onclick="showPage('welcome')">
+❤️ Yes
+</button>
+
+<button onclick="showPage('wrong')">
+No
+</button>
+
+</div>
+
+</section>
+
+<!-- Wrong Person -->
+<section id="wrong" class="page">
+
+<div class="card">
+
+<h2>Oops ❤️</h2>
+
+<p>
+This surprise belongs to someone very special.
+</p>
+
+<button onclick="showPage('verify')">
+Go Back
+</button>
+
+</div>
+
+</section>
+
+<!-- Welcome -->
+<section id="welcome" class="page">
+
+<div class="card">
+
+<h1>Hey Fiona ❤️</h1>
+
+<p>
+
+I made this little surprise just for you.
+
+I hope it makes you smile.
+
+</p>
+
+<button id="musicBtn">
+🎵 Play Our Song
+</button>
+
+<audio id="bgMusic" loop>
+    <source src="get-you-the-moon.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="showPage('gallery')">
+Continue ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- Gallery -->
+
+<section id="gallery" class="page">
+
+<div class="card">
+
+<h2>Our Beautiful Memories 📸</h2>
+
+<img id="photo"
+src="photo1.png"
+alt="Memory">
+
+<div class="galleryButtons">
+
+<button id="prevBtn">
+⬅ Previous
+</button>
+
+<button id="nextBtn">
+Next ➡
+</button>
+
+</div>
+
+<br>
+
+<button onclick="showPage('envelope')">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Envelope -->
+
+<section id="envelope" class="page">
+
+<div class="card">
+
+<h1>💌</h1>
+
+<h2>Tap Below</h2>
+
+<button onclick="showPage('letter')">
+
+Open Letter ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Letter -->
+
+<section id="letter" class="page">
+
+<div class="card">
+
+<h2>Dear Fiona ❤️</h2>
+
+<p id="letterText">
+
+Your beautiful letter will appear here...
+
+</p>
+
+<button onclick="showPage('final')">
+
+Final Surprise ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Final -->
+
+<section id="final" class="page">
+
+<div class="card">
+
+<h1>I Love You ❤️</h1>
+
+<h2>Happy Girlfriends Day</h2>
+
+<h3>Forever Yours,</h3>
+
+<h2>Brandon ❤️</h2>
+
+<button>
+
+❤️ Forever ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
